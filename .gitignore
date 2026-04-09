@@ -84,10 +84,15 @@ dist
 
 # Gatsby files
 .cache/
+tmp/
+temp/
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
+# 🔹 Datos grandes (datasets)
+data/
+datasets/
 # vuepress build output
 .vuepress/dist
 
@@ -137,3 +142,52 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# 🔹 Archivos sensibles (tokens, keys IA)
+secrets.json
+config.local.json
+
+# 🔹 Build / compilación
+dist/
+.angular/
+build/
+
+# 🔹 Modelos / IA (si usas local)
+models/
+*.h5
+*.pt
+*.onnx
+
+
+
+# 🔹 Archivos de agentes IA / herramientas automáticas
+.agents/
+.agent/
+.ai/
+.ai-cache/
+.ai-config/
+.ai-settings/
+
+# 🔹 Configs locales de herramientas IA
+.cursor/
+.copilot/
+.github/copilot/
+.vscode/copilot/
+
+# 🔹 Archivos generados por IA
+*.generated.*
+*.ai.*
+*.prompt
+
+# 🔹 Logs de agentes
+agent.log
+ai.log
+
+# 🔹 Sesiones / estados IA
+.sessions/
+.state/
+.memory/
+
+# 🔹 Archivos temporales IA
+*.tmp
+*.cache
