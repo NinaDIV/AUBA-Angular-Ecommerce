@@ -1,0 +1,129 @@
+.admin-container {
+  padding: 8rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #737373;
+  margin: 0;
+}
+
+.add-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  border: 1px solid #eaeaea;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background: #ebebeb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+
+.info {
+  flex: 1;
+
+  h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+  }
+}
+
+.role {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: #f0f0f0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  color: #555;
+
+  &.investor {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+}
+
+.payment-info {
+  text-align: right;
+  margin-right: 2rem;
+
+  @media (max-width: 768px) {
+    text-align: left;
+    margin-right: 0;
+  }
+
+  .label {
+    display: block;
+    font-size: 0.8rem;
+    color: #737373;
+  }
+
+  .amount {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111;
+  }
+}
+
+.pay-btn {
+  background: transparent;
+  border: 2px solid #111;
+  color: #111;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #111;
+    color: white;
+  }
+}
