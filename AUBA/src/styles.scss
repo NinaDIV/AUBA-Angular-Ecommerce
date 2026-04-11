@@ -8,7 +8,26 @@
 }
 
 body {
-  background-color: vars.$lusion-bg;
-  color: vars.$lusion-black;
+  background-color: vars.$auba-white;
+  color: vars.$auba-black;
+  font-family: vars.$font-body;
   overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 8vw;
+  
+  @media (max-width: 1024px) { padding: 0 6vw; }
+  @media (max-width: 768px) { padding: 0 25px; }
+}
+
+.container--narrow {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 8vw;
+  @media (max-width: 768px) { padding: 0 25px; }
 }

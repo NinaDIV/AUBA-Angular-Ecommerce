@@ -1,4 +1,30 @@
-$lusion-bg: #ffffff;
-$lusion-black: #000000;
-$lusion-gray: #666666;
-$luxury-accent: #c4a77d; /* subtle gold/camel tone */
+// Professional AUBA Design System Tokens
+
+// Colors
+$auba-gold: #D4AF37;
+$auba-gold-light: #F1E5AC;
+$auba-black: #000000;
+$auba-white: #FFFFFF;
+$auba-gray-100: #F5F5F5;
+$auba-gray-200: #EEEEEE;
+$auba-gray-400: #999999;
+$auba-gray-600: #666666;
+
+// Glassmorphism
+$glass-bg: rgba(255, 255, 255, 0.85);
+$glass-blur: blur(15px);
+$glass-border: 1px solid rgba(0, 0, 0, 0.05);
+
+// Transitions
+$transit-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+$transit-fast: all 0.2s ease-in-out;
+
+// Fonts (imported in _typography.scss)
+$font-logo: 'Cinzel', serif;
+$font-body: 'Jost', system-ui, sans-serif;
+$font-alt: 'Playfair Display', serif;
+
+// Layout
+$header-height: 80px;
+$container-max-width: 1440px;
+$section-padding: 120px 40px;

@@ -1,0 +1,67 @@
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #fafafa;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  transition: transform 0.2s ease-out;
+
+  &--1 {
+    background: radial-gradient(circle, #D4AF37 0%, transparent 70%);
+    top: 20%;
+    left: 20%;
+  }
+
+  &--2 {
+    background: radial-gradient(circle, #0000FF 0%, transparent 70%); // Lusion blue hint
+    top: 70%;
+    left: 80%;
+  }
+
+  &--3 {
+    background: radial-gradient(circle, #000 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 80px; // space for header
+}
+
+.footer-simple {
+  padding: 80px 40px 40px;
+  text-align: center;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+// Global page entrance animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
